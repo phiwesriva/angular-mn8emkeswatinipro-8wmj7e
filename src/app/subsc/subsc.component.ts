@@ -32,12 +32,12 @@ insights = new FormControl('');
   ngOnInit() {
   }
 
-onSubmit(subscribeData) {
+onSubmit(customerData) {
     // Process checkout data here
  
     this.subscForm.reset();
 
-    console.warn('Your subscribtion has been submitted', subscribeData);
+    console.warn('Your subscribtion has been submitted', customerData);
   }
   
 
