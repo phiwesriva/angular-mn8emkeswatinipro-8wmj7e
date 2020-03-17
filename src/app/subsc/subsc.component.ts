@@ -23,10 +23,10 @@ insights = new FormControl('');
       Tnumber: '',
       Cnumber: '',
       Eaddress: '',
-       Eaddress: '',
-        DOB: '',
-         Paddress: ''
-
+      Eaddress: '',
+      DOB: '',
+      Paddress: '',
+      POP: ''
     });}
 
   ngOnInit() {
