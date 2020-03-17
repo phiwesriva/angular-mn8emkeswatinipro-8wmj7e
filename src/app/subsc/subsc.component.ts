@@ -13,7 +13,7 @@ export class SubscComponent implements OnInit {
 subscForm;
 insights = new FormControl('');
   constructor(private cartService: CartService,
-    private formBuilder: FormBuilder) { 
+    private formBuilder: FormBuilder,) { 
     this.subscForm = this.formBuilder.group({
       insights: '',
       copiesperissue: '',
