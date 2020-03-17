@@ -12,13 +12,14 @@ import { Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
 contactForm;
 
-  constructor(private cartService: CartService,
-    private formBuilder: FormBuilder) { 
+  constructor(
+    private formBuilder: FormBuilder,) { 
     this.contactForm = this.formBuilder.group({
-       nameandsurname: ['',Validators.required],
+
+      nameandsurname: '',
       Cname: '',
       Tnumber: '',
-      Cnumber: ['',Validators.required],
+      Cnumber: '',
       Eaddress: '',
      Info: ''
 

@@ -16,12 +16,12 @@ insights = new FormControl('');
     private formBuilder: FormBuilder) { 
     this.subscForm = this.formBuilder.group({
       insights: '',
-      copiesperissue: ['',Validators.required],
-      nameandsurname: ['',Validators.required],
+      copiesperissue: '',
+      nameandsurname: '',
       Cname: '',
       address: '',
       Tnumber: '',
-      Cnumber: ['',Validators.required],
+      Cnumber: '',
       Eaddress: '',
        Eaddress: '',
         DOB: '',

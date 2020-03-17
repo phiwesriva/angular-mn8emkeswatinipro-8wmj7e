@@ -9,8 +9,9 @@ import { FormBuilder } from '@angular/forms';
 export class AdvertComponent implements OnInit {
   advertForm;
 
-  constructor(private formBuilder: FormBuilder,) {
-    this.advertForm = this.formBuilder.group 
+  constructor(
+    private formBuilder: FormBuilder,
+    ){this.advertForm = this.formBuilder.group 
     ({
       nameandsurname: '',
       Eaddress: '',

@@ -1,7 +1,7 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
 
 <h2>We would like to from you</h2>
-<p><label for="Cname"> Our contact details</label>Raspers Media (PTY) LTD No: 302, Upper Deck, Corporate Place Mbabane <label for="email">Email :</label> ntokozo@raspermedia.com <label for="cell">Cell :</label> +268 7661 8219 / 7675 657</p>
+<p><label for="name"> Our contact details</label>Raspers Media (PTY) LTD No: 302, Upper Deck, Corporate Place Mbabane <label for="email">Email :</label> ntokozo@raspermedia.com <label for="cell">Cell :</label> +268 7661 8219 / 7675 657</p>
 
 
 
@@ -9,7 +9,7 @@
     <label for="nameandsurname">
       Name
     </label>
-    <input id="nameandsurname" type="text" [formControl]="nameandsurname" required>
+    <input id="nameandsurname" type="text" formControl="nameandsurname">
 </div>
 
 <div>
