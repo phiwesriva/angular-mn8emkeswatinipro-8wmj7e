@@ -1,0 +1,34 @@
+<form [formGroup]="advertForm" (ngSubmit)="onSubmit(advertForm.value)">
+<table class="center">
+  <tr><th colspan="2"> Advertise with us</th></tr>
+<tr>
+<td colspan="2"><img src="https://raw.githubusercontent.com/phiwesriva/angular-mn8emkeswatinipro-oypffp/master/src/assets/Rate.JPG">
+</td>
+</tr>
+
+<tr>
+<th colspan="2">To advertise with us please fill in your information and attach your proof of payment and artwork below</th>
+</tr>
+
+<tr>
+  <td><label for="nameandsurname">Name</label></td><td><input id="nameandsurname" type="text" [formControl]="nameandsurname" required></td>
+</tr>
+
+<tr>
+  <td><label for="Eaddress">Email Address</label></td><td><input id="Eaddress" type="text" formControlName="Eaddress"></td>
+</tr>
+
+<tr>
+  <td><label for="POP">Artwork</label></td><td><input id="artwork" type="file" formControlName="artw"></td>
+</tr>
+
+<tr>
+  <td><label for="POP">Proof Of Payment</label></td><td><input id="POP" type="file" formControlName="POP"></td>
+</tr>
+
+<tr>
+  <td><button class="button" type="submit">Submit</button></td><td></td>
+</tr>
+
+</table>
+</form>
