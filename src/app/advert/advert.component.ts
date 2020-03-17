@@ -22,11 +22,11 @@ export class AdvertComponent implements OnInit {
 
   ngOnInit() {
   }
-  onSubmit(advertData) {
+  onSubmit(customerData) {
     // Process checkout data here
         this.advertForm.reset();
 
-    console.warn('Advert submitted', advertData);
+    console.warn('Advert submitted', customerData);
   }
 
 }

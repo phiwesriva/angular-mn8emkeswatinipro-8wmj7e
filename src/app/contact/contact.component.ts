@@ -28,11 +28,11 @@ contactForm;
   ngOnInit() {
   }
 
-onSubmit(contactData) {
+onSubmit(customerData) {
     // Process checkout data here
     this.advertForm.reset();
 
-    console.warn('Information submitted', contactData);
+    console.warn('Information submitted', customerData);
   }
   
 
