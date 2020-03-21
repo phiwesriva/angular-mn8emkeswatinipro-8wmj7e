@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CartService } from '../cart.service';
 import { FormBuilder } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 /*import { Validators } from '@angular/forms';*/
@@ -15,6 +14,7 @@ insights = new FormControl('');
   constructor(
     private formBuilder: FormBuilder,) { 
     this.subscForm = this.formBuilder.group({
+
       insights: '',
       copiesperissue: '',
       nameandsurname: '',
