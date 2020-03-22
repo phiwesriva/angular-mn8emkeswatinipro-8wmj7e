@@ -1,53 +1,46 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
+<table>
+<tr>
+  <td colspan="2"><h2>We would like to from you</h2></td>
+</tr>
 
-<h2>We would like to from you</h2>
-<p><label for="name"> Our contact details</label>Raspers Media (PTY) LTD No: 302, Upper Deck, Corporate Place Mbabane <label for="email">Email :</label> ntokozo@raspermedia.com <label for="cell">Cell :</label> +268 7661 8219 / 7675 657</p>
+<tr>
+  <td colspan="2"><p><label for="name"> Our contact details</label>Raspers Media (PTY) LTD No: 302, Upper Deck, Corporate Place Mbabane <label for="email">Email :</label> ntokozo@raspermedia.com <label for="cell">Cell :</label> +268 7661 8219 / 7675 657</p></td>
+</tr>
 
+<tr>
+  <td><label for="nameandsurname">Name</label></td>
+  <td><input id="nameandsurname" type="text" formControlName="nameandsurname"></td>
+</tr>
 
+<tr>
+  <td><label for="Cname">Company Name(If applicable)</label></td>
+    <td><input id="Cname" type="text" formControlName="Cname"></td>
+</tr>
 
-<div>
-    <label for="nameandsurname">
-      Name
-    </label>
-    <input id="nameandsurname" type="text" formControlName="nameandsurname">
-</div>
+<tr>
+  <td><label for="Tnumber">Tel Number</label></td>
+  <td><input id="Tnumber" type="tel" formControlName="Tnumber"></td>
+</tr>
 
-<div>
-    <label for="Cname">
-      Company Name(If applicable)
-    </label>
-    <input id="Cname" type="text" formControlName="Cname">
-</div>
+<tr>
+  <td><label for="Cnumber">Cell Number</label></td>
+  <td><input id="Cnumber" type="tel" formControlName="Cnumber" required></td>
+</tr>
 
-<div>
-    <label for="Tnumber">
-Tel Number
- </label>
-    <input id="Tnumber" type="tel" formControlName="Tnumber">
-</div>
+<tr>
+  <td><label for="Eaddress">Email Address</label></td>
+  <td><input id="Eaddress" type="email" formControlName="Eaddress"></td>
+</tr>
 
-<div>
-    <label for="Cnumber">
-Cell Number
- </label>
-    <input id="Cnumber" type="tel" formControlName="Cnumber" required>
-</div>
+<tr>
+  <td><label for="Info">Questions/Compliments/Complaints</label></td>
+    <td><input id="Info" type="textarea" formControlName="Info"></td>
+</tr>
 
-<div>
-    <label for="Eaddress">
-      Email Address
-    </label>
-    <input id="Eaddress" type="email" formControlName="Eaddress">
-</div>
-<div>
-    <label for="Info">
-      Questions/Compliments/Complaints
-    </label>
-    <input id="Info" type="textarea" formControlName="Info">
-</div>
-
-  <button class="button" type="submit">Submit</button>
-
+<tr>
+  <td colspan="2"><button class="button" type="submit">Submit</button></td></tr>
+</table>
 </form>
 
 
