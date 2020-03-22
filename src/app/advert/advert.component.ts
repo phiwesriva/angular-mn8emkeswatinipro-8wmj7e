@@ -14,7 +14,7 @@ export class AdvertComponent implements OnInit {
 
     {this.advertForm = this.formBuilder.group 
     ({
-      nameandsurname1: '',
+      nameandsurname: '',
       Eaddress: '',
       artw: '',
       POP: ''

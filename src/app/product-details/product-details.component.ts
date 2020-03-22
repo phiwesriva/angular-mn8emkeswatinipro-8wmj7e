@@ -11,7 +11,7 @@ import { CartService } from '../cart.service';
 
 export class ProductDetailsComponent implements OnInit {
   addToCart(product) {
-    window.alert('Your product has been added to the shopping basket! Please click Checkout button to complete purchase');
+    window.alert('Your product has been added to the shopping basket! Please click Checkout icon to complete purchase');
     this.cartService.addToCart(product);
   }
 

@@ -1,25 +1,37 @@
-      <img src="https://raw.githubusercontent.com/phiwesriva/angular-mn8emkeswatinipro-e6w3hm/master/src/assets/subscribe2.png">
-
-      <h2>Subscribe!!!!</h2>
-
 <form oninput="x.value=parseInt(insights.value)+parseInt(copiesperissue.value)" [formGroup]="subscForm" (ngSubmit)="onSubmit(subscForm.value)">
+<table>
+ 
+  <tr>
+    <td colspan="2"><img src="https://raw.githubusercontent.com/phiwesriva/angular-mn8emkeswatinipro-e6w3hm/master/src/assets/subscribe2.png"></td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><h2>Subscribe!!!!</h2></td>
+  </tr>
+
+
 
 <!--<h2>2020 ESWATINI PROPERTY REVIEW SUBSCRIPTION FORM</h2>-->
-<p><label for="Price"> Price per annum:</label> E300 including delivery <label for="frequency">Frequency:</label> Every Two Months Number of copies per annum:  6  
-<label for="package">Package includes:</label> Eswatini Property Review Print x 6, Online Edition, Podcasts and Newsletters </p>
+<tr>
+  <td colspan="2"><p><label for="Price"> Price per annum:</label> E300 including delivery <label for="frequency">Frequency:</label> Every Two Months Number of copies per annum:  6  
+   <label for="package">Package includes:</label> Eswatini Property Review Print x 6, Online Edition, Podcasts and Newsletters </p></td>
+</tr>
 
-<label for="additional">
-For an additional E99  once off you get Insights every four months,make yyour selection below 
-</label>
-<div >
+<tr>
+  <td colspan="2"><label for="additional">
+    For an additional E99  once off you get Insights every four months,make yyour selection below
+</label></td>
+</tr>
+
 <!--<label for="insights">
 Insights(Research)
 </label>-->
-<select matNativeControl required id="insights">
+<tr>
+  <td colspan="2"><select matNativeControl required id="insights" formControlName="insights">
   <option value="0">Please select</option>
 <option value="99">Insights(Research)</option>
-</select>
-</div>
+</select></td>
+</tr>
 
 <!--
 <p>
@@ -27,11 +39,11 @@ Insights(Research)
 
 </p>-->
 
-<div>
   <!-- <label for="copiesperissue">
       Select number of copies per issue
     </label>-->
-    <select matNativeControl required id="copiesperissue">
+<tr>
+  <td colspan="2"><select matNativeControl required id="copiesperissue" formControlName="copiesperissue">
 <option value="0">Select number of copies per issue</option>
 <option value="300">1 copy per issue</option>
 <option value="600">2 copies per issue</option>
@@ -53,80 +65,63 @@ Insights(Research)
 <option value="5400">18 copies per issue</option>
 <option value="5700">19 copies per issue</option>
 <option value="6000">20 copies per issue</option>
-  </select>
-</div>
+  </select></td>
+</tr>
 
+<tr><td colspan="2">Your total is going to be = E <output name="x" for="insights copiesperissue"></output></td>
+</tr>
 
-Your total is going to be = E<output name="x"  value="300" for="insights copiesperissue"></output>
-
-<div>
-    <label for="nameandsurname">
+<tr><td><label for="nameandsurname">
       Name
-    </label>
-    <input id="nameandsurname" type="text" formControlName="nameandsurname">
-</div>
+    </label></td><td>
+    <input id="nameandsurname" type="text" formControlName="nameandsurname"></td>
+</tr>
 
-<div>
-    <label for="Cname">
-      Company Name(If applicable)
-    </label>
-    <input id="Cname" type="text" formControlName="Cname">
-</div>
+<tr>
+  <td><label for="Cname">Company Name(If applicable)</label></td>
+  <td><input id="Cname" type="text" formControlName="Cname"></td>
+</tr>
 
-<div>
-    <label for="address">
-      Address
-    </label>
-    <input id="address" type="text" formControlName="address">
-</div>
+<tr>
+  <td><label for="address">Address</label></td> 
+  <td><input id="address" type="text" formControlName="address"></td>
+</tr>
 
-<div>
-    <label for="Tnumber">
-Tel Number
- </label>
-    <input id="Tnumber" type="text" formControlName="Tnumber">
-</div>
+<tr>
+  <td><label for="Tnumber">Tel Number </label></td>
+  <td><input id="Tnumber" type="text" formControlName="Tnumber"></td>
+</tr>
 
-<div>
-    <label for="Cnumber">
-Cell Number
- </label>
-    <input id="Cnumber" type="text" formControlName="Cnumber">
-</div>
+<tr>
+  <td><label for="Cnumber">Cell Number</label></td>
+  <td><input id="Cnumber" type="text" formControlName="Cnumber"></td>
+</tr>
 
-<div>
-    <label for="Eaddress">
-      Email Address
-    </label>
-    <input id="Eaddress" type="text" formControlName="Eaddress">
-</div>
+<tr>
+  <td><label for="Eaddress">Email Address</label></td>
+  <td><input id="Eaddress" type="text" formControlName="Eaddress"></td>
+</tr>
 
-<div>
-    <label for="DOB">
-Date of Birth yyyy-mm-dd(Password for online edition)
-</label>
-<input id="DOB" type="text" formControlName="DOB">
-</div>
+<tr
+><td><label for="DOB">Date of Birth yyyy-mm-dd(Password for online edition)</label></td>
+<td><input id="DOB" type="text" formControlName="DOB"></td>
+</tr>
 
+<tr>
+  <td><label for="Paddress">Postal Address</label></td>
+  <td><input id="Paddress" type="text" formControlName="Paddress"></td>
+</tr>
 
-<div>
-    <label for="Paddress">
-      Postal Address
-    </label>
-    <input id="Paddress" type="text" formControlName="Paddress">
-</div>
+<tr>
+  <td><label for="POP">Proof Of Payment</label></td>
+  <td><input id="POP" type="file" formControlName="POP"></td>
+</tr>
 
-<div>
-    <label for="POP">
-      Proof Of Payment
-    </label>
-    <input id="POP" type="file" formControlName="POP">
-</div>
+<tr>
+  <td><button class="button" type="submit">Submit</button></td>
+</tr>
 
-
-
-  <button class="button" type="submit">Submit</button>
-
+</table>
 </form>
 
 
