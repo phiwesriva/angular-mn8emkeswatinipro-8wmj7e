@@ -1,4 +1,4 @@
-<h3>Shopping Basket</h3>
+
 
 <!--<p>
   <a routerLink="/shipping">Delivery Prices</a>
@@ -10,23 +10,28 @@
 </div>
 
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+<table class="center">
 
-  <div>
-    <label for="name">
-      Name
-    </label>
-    <input id="name" type="text" formControlName="name">
-  </div>
+<tr>
+    <th colspan="2"><h3>Shopping Basket</h3></th>
+</tr>
 
-  <div>
-    <label for="address">
-      Address
-    </label>
-    <input id="address" type="text" formControlName="address">
-  </div>
+<tr>  
+   <td><label for="name">Name</label></td>
+   <td><input id="name" type="text" formControlName="name"></td>
+</tr>
 
-  <button class="button" type="submit">Purchase</button>
+<tr>
+    <td><label for="address">Address</label></td>
+    <td><input id="address" type="text" formControlName="address"></td>
+</tr>
 
+<tr>
+  <td colspan="2"><button class="button" type="submit">Purchase</button></td>
+</tr>
+
+</table>
 </form>
+
 
  
