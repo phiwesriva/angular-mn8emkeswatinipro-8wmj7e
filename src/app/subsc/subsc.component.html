@@ -1,4 +1,36 @@
 <form oninput="x.value=parseInt(insights.value)+parseInt(copiesperissue.value)" [formGroup]="subscForm" (ngSubmit)="onSubmit(subscForm.value)">
+  
+<!--  <select matNativeControl required id="insights" >
+  <option value="0">Please select</option>
+<option value="99">Insights(Research)</option>
+</select>
+
+<select matNativeControl required id="copiesperissue" >
+<option value="0">Select number of copies per issue</option>
+<option value="300">1 copy per issue</option>
+<option value="600">2 copies per issue</option>
+<option value="900">3 copies per issue</option>
+<option value="1200">4 copies per issue</option>
+<option value="1500">5 copies per issue</option>
+<option value="1800">6 copies per issue</option>
+<option value="2100">7 copies per issue</option>
+<option value="2400">8 copies per issue</option>
+<option value="2700">9 copies per issue</option>
+<option value="3000">10 copies per issue</option>
+<option value="3300">11 copies per issue</option>
+<option value="3600">12 copies per issue</option>
+<option value="3900">13 copies per issue</option>
+<option value="4200">14 copies per issue</option>
+<option value="4500">15 copies per issue</option>
+<option value="4800">16 copies per issue</option>
+<option value="5100">17 copies per issue</option>
+<option value="5400">18 copies per issue</option>
+<option value="5700">19 copies per issue</option>
+<option value="6000">20 copies per issue</option>
+  </select>
+Your total is going to be = E <output name="x" for="insights copiesperissue"></output>
+</form>-->
+
 <table>
  
   <tr>
@@ -27,7 +59,7 @@
 Insights(Research)
 </label>-->
 <tr>
-  <td colspan="2"><select matNativeControl required id="insights" formControlName="insights">
+  <td colspan="2"><select matNativeControl required id="insights">
   <option value="0">Please select</option>
 <option value="99">Insights(Research)</option>
 </select></td>
@@ -43,7 +75,7 @@ Insights(Research)
       Select number of copies per issue
     </label>-->
 <tr>
-  <td colspan="2"><select matNativeControl required id="copiesperissue" formControlName="copiesperissue">
+  <td colspan="2"><select matNativeControl required id="copiesperissue">
 <option value="0">Select number of copies per issue</option>
 <option value="300">1 copy per issue</option>
 <option value="600">2 copies per issue</option>
@@ -123,8 +155,3 @@ Insights(Research)
 
 </table>
 </form>
-
-
-
-
-

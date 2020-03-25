@@ -27,7 +27,7 @@ export class CartComponent{
   onSubmit(customerData) {
     // Process checkout data here
     this.items = this.cartService.clearCart();
-    window.alert('Thank you');
+    window.alert('Thank you for your order');
     this.checkoutForm.reset();
 
     console.warn('Your order has been submitted', customerData);

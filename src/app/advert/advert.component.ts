@@ -26,6 +26,7 @@ export class AdvertComponent implements OnInit {
   }
   onSubmit(customerData) {
     // Process checkout data here
+    window.alert('Thank you for your advert');
         this.advertForm.reset();
 
     console.warn('Advert submitted', customerData);

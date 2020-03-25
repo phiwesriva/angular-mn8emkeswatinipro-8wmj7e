@@ -34,7 +34,7 @@ insights = new FormControl('');
 
 onSubmit(customerData) {
     // Process checkout data here
- 
+ window.alert('Thank you for subscribing');
     this.subscForm.reset();
 
     console.warn('Your subscribtion has been submitted', customerData);
