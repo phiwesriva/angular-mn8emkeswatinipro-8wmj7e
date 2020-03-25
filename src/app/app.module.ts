@@ -20,6 +20,7 @@ import { PodcastComponent } from './podcast/podcast.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ThanksComponent } from './thanks/thanks.component';
 
 @NgModule({
   imports: [
@@ -39,6 +40,7 @@ import { FooterComponent } from './footer/footer.component';
       { path: 'podcast', component: PodcastComponent },
       { path: 'advert', component: AdvertComponent },
       { path: 'about', component: AboutComponent },
+      { path: 'thanks', component: ThanksComponent },
     ])
   ],
   declarations: [
@@ -56,7 +58,8 @@ import { FooterComponent } from './footer/footer.component';
     PodcastComponent,
     AboutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ThanksComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
